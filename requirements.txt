@@ -1,0 +1,42 @@
+# Requisitos para hunterclassic
+
+## Dependencias principales
+
+```
+pydantic>=2.0.0
+```
+
+## Versión de Python
+
+```
+Python>=3.12
+```
+
+## Instalación
+
+```bash
+pip install pydantic
+```
+
+## Dependencias de desarrollo (opcional)
+
+```
+pytest>=7.0.0
+mypy>=1.0.0
+black>=23.0.0
+isort>=5.0.0
+```
+
+## Estructura del proyecto
+
+El proyecto es código Python puro que no requiere instalación. Solo copia la carpeta `hunterclassic/` a tu proyecto o añádela al PYTHONPATH.
+
+## Datos incluidos
+
+Los siguientes archivos JSON están incluidos en `hunterclassic/static/`:
+
+- `animals.json` - 62 animales con sus municiones éticas
+- `weapons.json` - 138 armas con municiones compatibles  
+- `reserves.json` - 12 reservas con especies presentes
+
+Estos datos se cargan automáticamente al usar `StaticData.load()`.
